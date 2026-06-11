@@ -1,3 +1,4 @@
+# Version 1
 This is an intermediate version that can add course and display them on a day to day basis.
 
 It also detects if there are clashes in the slots added.
