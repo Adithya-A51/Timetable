@@ -50,23 +50,38 @@ def add_course(new_course : Course):
         data = json.load(file)
 
     fixed_slots = data.get("fixed_slots", {})
+    my_courses = data.get("my_courses", [])
+
     if new_course.slot not in fixed_slots or new_course.sub_slot not in fixed_slots[new_course.slot]:
         raise HTTPException(status_code=404, detail="Invalid slot selected.")
         
+    
+    if len(my_courses) == 0:
+        data["my_courses"] = [new_course.model_dump()]
+
+        with open(db, "w") as file:
+            json.dump(data, file, indent=4)
+
+        return {
+            "message": f"Successfully added {new_course.course_code} to {new_course.sub_slot}!"
+        }
+    
     new_slot_timings = fixed_slots[new_course.slot][new_course.sub_slot]
 
+
     for current_course in data.get("my_courses", []):
-        current_slot = current_course['slot']
-        current_subslot = current_course['sub_slot']
-        current_timing = fixed_slots[current_slot][current_subslot]
+        if(current_course != []):
+            current_slot = current_course['slot']
+            current_subslot = current_course['sub_slot']
+            current_timing = fixed_slots[current_slot][current_subslot]
 
 
-        #Clash Detection Logic
-        for new in new_slot_timings:
-            for ext in current_timing:
-                if new['day'] == ext['day']:
-                    if new['start'] == ext['start'] or new['end'] == ext['end']:
-                        raise HTTPException(status_code=400, detail="Clashing in Courses Detected")
+            #Clash Detection Logic
+            for new in new_slot_timings:
+                for ext in current_timing:
+                    if new['day'] == ext['day']:
+                        if new['start'] == ext['start'] or new['end'] == ext['end']:
+                            raise HTTPException(status_code=400, detail="Clashing in Courses Detected")
                         
 
     #Add new course if no error raised

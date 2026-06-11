@@ -1,30 +1,30 @@
-function Timetable() {
-  const data = {
-    fixed_slots: {
-      A: {
-        A_1: [
-          { day: "Monday", start: "08:00", end: "08:50" },
-          { day: "Tuesday", start: "09:00", end: "09:50" },
-          { day: "Wednesday", start: "10:00", end: "10:50" },
-          { day: "Friday", start: "11:00", end: "11:50" },
-        ],
-      },
-    },
-    my_courses: [
-      {
-        slot: "A",
-        sub_slot: "A_1",
-        course_code: "EE2015",
-        course_name: "Digital Logic Design",
-      },
-    ],
-  };
+function Timetable({ data }) {
+//   const data = {
+//     fixed_slots: {
+//       A: {
+//         A_1: [
+//           { day: "Monday", start: "08:00", end: "08:50" },
+//           { day: "Tuesday", start: "09:00", end: "09:50" },
+//           { day: "Wednesday", start: "10:00", end: "10:50" },
+//           { day: "Friday", start: "11:00", end: "11:50" },
+//         ],
+//       },
+//     },
+//     my_courses: [
+//       {
+//         slot: "A",
+//         sub_slot: "A_1",
+//         course_code: "EE2015",
+//         course_name: "Digital Logic Design",
+//       },
+//     ],
+//   };
   const get_courses = (day) => {
     let classes = [];
 
-    data.my_courses.forEach((course) => {
+    (data?.my_courses || []).forEach((course) => {
         // Finding all slots for the course
-      const schedule = data.fixed_slots[course.slot][course.sub_slot];
+      const schedule = data?.fixed_slots?.[course.slot]?.[course.sub_slot] || [];
         // Finding if class is there today
       const class_today = schedule.find((rule) => rule.day === day);
 

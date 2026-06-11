@@ -1,11 +1,12 @@
 import { useState } from "react";
-function AddCourse(){
 
-    const fixed_slots = {
-        "A": { "A_1": [], "A_2": [] },
-        "B": { "B_1": [], "B_2": [] },
-        "C": { "C_1": [], "C_2": [] }
-    };
+function AddCourse({ fixed_slots, onAddCourse }) {
+
+    // const fixed_slots = {
+    //     "A": { "A_1": [], "A_2": [] },
+    //     "B": { "B_1": [], "B_2": [] },
+    //     "C": { "C_1": [], "C_2": [] }
+    // };
 
     const [CourseCode, setCourseCode] = useState("");
     const [CourseName, setCourseName] = useState("");
@@ -13,11 +14,11 @@ function AddCourse(){
     const [CourseSubslot, setCourseSubslot] = useState("");
 
 
-    const slots = Object.keys(fixed_slots);
+    const slots = Object.keys(fixed_slots || {});
 
-    const subslots = (CourseSlot) ? Object.keys(fixed_slots[CourseSlot]) : [];
+    const subslots = CourseSlot ? Object.keys(fixed_slots[CourseSlot] || {}) : [];
 
-    const submit_course = (e) =>{
+    const submit_course = async(e) =>{
         e.preventDefault();
 
         const new_course = {
@@ -27,14 +28,14 @@ function AddCourse(){
             course_name: CourseName
         };
 
-    console.log("Will send this to backend:", new_course);
-    alert(`Simulated adding ${CourseCode} to ${CourseSlot}!`);
+    const success = await onAddCourse(new_course);
 
-    setCourseCode('');
-    setCourseName('');
-    setCourseSlot('');
-    setCourseSubslot('');
-
+    if (success) {
+      setCourseCode('');
+      setCourseName('');
+      setCourseSlot('');
+      setCourseSubslot('');
+    }
     };
 
    return (

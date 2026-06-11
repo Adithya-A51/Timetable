@@ -1,154 +1,439 @@
 {
-  "fixed_slots": {
-    "A": {
-      "A_1": [
-        { "day": "Monday", "start": "08:00", "end": "08:50" },
-        { "day": "Tuesday", "start": "13:00", "end": "13:50" },
-        { "day": "Thursday", "start": "11:00", "end": "11:50" },
-        { "day": "Friday", "start": "10:00", "end": "10:50" }
-      ],
-      "A_2": [
-        { "day": "Monday", "start": "08:00", "end": "08:50" },
-        { "day": "Tuesday", "start": "12:00", "end": "12:50" },
-        { "day": "Thursday", "start": "11:00", "end": "11:50" },
-        { "day": "Friday", "start": "10:00", "end": "10:50" }
-      ]
+    "fixed_slots": {
+        "A": {
+            "A_1": [
+                {
+                    "day": "Monday",
+                    "start": "08:00",
+                    "end": "08:50"
+                },
+                {
+                    "day": "Tuesday",
+                    "start": "13:00",
+                    "end": "13:50"
+                },
+                {
+                    "day": "Thursday",
+                    "start": "11:00",
+                    "end": "11:50"
+                },
+                {
+                    "day": "Friday",
+                    "start": "10:00",
+                    "end": "10:50"
+                }
+            ],
+            "A_2": [
+                {
+                    "day": "Monday",
+                    "start": "08:00",
+                    "end": "08:50"
+                },
+                {
+                    "day": "Tuesday",
+                    "start": "12:00",
+                    "end": "12:50"
+                },
+                {
+                    "day": "Thursday",
+                    "start": "11:00",
+                    "end": "11:50"
+                },
+                {
+                    "day": "Friday",
+                    "start": "10:00",
+                    "end": "10:50"
+                }
+            ]
+        },
+        "B": {
+            "B_1": [
+                {
+                    "day": "Monday",
+                    "start": "09:00",
+                    "end": "09:50"
+                },
+                {
+                    "day": "Tuesday",
+                    "start": "08:00",
+                    "end": "08:50"
+                },
+                {
+                    "day": "Wednesday",
+                    "start": "13:00",
+                    "end": "13:50"
+                },
+                {
+                    "day": "Friday",
+                    "start": "11:00",
+                    "end": "11:50"
+                }
+            ],
+            "B_2": [
+                {
+                    "day": "Monday",
+                    "start": "09:00",
+                    "end": "09:50"
+                },
+                {
+                    "day": "Tuesday",
+                    "start": "08:00",
+                    "end": "08:50"
+                },
+                {
+                    "day": "Wednesday",
+                    "start": "12:00",
+                    "end": "12:50"
+                },
+                {
+                    "day": "Friday",
+                    "start": "11:00",
+                    "end": "11:50"
+                }
+            ]
+        },
+        "C": {
+            "C_1": [
+                {
+                    "day": "Monday",
+                    "start": "10:00",
+                    "end": "10:50"
+                },
+                {
+                    "day": "Tuesday",
+                    "start": "09:00",
+                    "end": "09:50"
+                },
+                {
+                    "day": "Wednesday",
+                    "start": "08:00",
+                    "end": "08:50"
+                },
+                {
+                    "day": "Friday",
+                    "start": "13:00",
+                    "end": "13:50"
+                }
+            ],
+            "C_2": [
+                {
+                    "day": "Monday",
+                    "start": "10:00",
+                    "end": "10:50"
+                },
+                {
+                    "day": "Tuesday",
+                    "start": "09:00",
+                    "end": "09:50"
+                },
+                {
+                    "day": "Wednesday",
+                    "start": "08:00",
+                    "end": "08:50"
+                },
+                {
+                    "day": "Friday",
+                    "start": "12:00",
+                    "end": "12:50"
+                }
+            ]
+        },
+        "D": {
+            "D_1": [
+                {
+                    "day": "Monday",
+                    "start": "11:00",
+                    "end": "11:50"
+                },
+                {
+                    "day": "Tuesday",
+                    "start": "10:00",
+                    "end": "10:50"
+                },
+                {
+                    "day": "Wednesday",
+                    "start": "09:00",
+                    "end": "09:50"
+                },
+                {
+                    "day": "Thursday",
+                    "start": "13:00",
+                    "end": "13:50"
+                }
+            ],
+            "D_2": [
+                {
+                    "day": "Monday",
+                    "start": "11:00",
+                    "end": "11:50"
+                },
+                {
+                    "day": "Tuesday",
+                    "start": "10:00",
+                    "end": "10:50"
+                },
+                {
+                    "day": "Wednesday",
+                    "start": "09:00",
+                    "end": "09:50"
+                },
+                {
+                    "day": "Thursday",
+                    "start": "12:00",
+                    "end": "12:50"
+                }
+            ]
+        },
+        "E": {
+            "E_1": [
+                {
+                    "day": "Tuesday",
+                    "start": "11:00",
+                    "end": "11:50"
+                },
+                {
+                    "day": "Wednesday",
+                    "start": "10:00",
+                    "end": "10:50"
+                },
+                {
+                    "day": "Thursday",
+                    "start": "08:00",
+                    "end": "08:50"
+                },
+                {
+                    "day": "Friday",
+                    "start": "17:00",
+                    "end": "17:50"
+                }
+            ]
+        },
+        "F": {
+            "F_1": [
+                {
+                    "day": "Tuesday",
+                    "start": "17:00",
+                    "end": "17:50"
+                },
+                {
+                    "day": "Wednesday",
+                    "start": "11:00",
+                    "end": "11:50"
+                },
+                {
+                    "day": "Thursday",
+                    "start": "09:00",
+                    "end": "09:50"
+                },
+                {
+                    "day": "Friday",
+                    "start": "08:00",
+                    "end": "08:50"
+                }
+            ]
+        },
+        "G": {
+            "G_1": [
+                {
+                    "day": "Monday",
+                    "start": "13:00",
+                    "end": "13:50"
+                },
+                {
+                    "day": "Wednesday",
+                    "start": "17:00",
+                    "end": "17:50"
+                },
+                {
+                    "day": "Thursday",
+                    "start": "10:00",
+                    "end": "10:50"
+                },
+                {
+                    "day": "Friday",
+                    "start": "9:00",
+                    "end": "09:50"
+                }
+            ],
+            "G_2": [
+                {
+                    "day": "Monday",
+                    "start": "12:00",
+                    "end": "12:50"
+                },
+                {
+                    "day": "Wednesday",
+                    "start": "17:00",
+                    "end": "17:50"
+                },
+                {
+                    "day": "Thursday",
+                    "start": "10:00",
+                    "end": "10:50"
+                },
+                {
+                    "day": "Friday",
+                    "start": "9:00",
+                    "end": "09:50"
+                }
+            ]
+        },
+        "H": {
+            "H_1": [
+                {
+                    "day": "Monday",
+                    "start": "14:00",
+                    "end": "15:15"
+                },
+                {
+                    "day": "Tuesday",
+                    "start": "15:30",
+                    "end": "16:45"
+                },
+                {
+                    "day": "Thursday",
+                    "start": "17:00",
+                    "end": "17:50"
+                }
+            ]
+        },
+        "J": {
+            "J_1": [
+                {
+                    "day": "Monday",
+                    "start": "17:00",
+                    "end": "17:50"
+                },
+                {
+                    "day": "Wednesday",
+                    "start": "14:00",
+                    "end": "15:15"
+                },
+                {
+                    "day": "Thursday",
+                    "start": "15:30",
+                    "end": "16:45"
+                }
+            ]
+        },
+        "K": {
+            "K_1": [
+                {
+                    "day": "Wednesday",
+                    "start": "15:30",
+                    "end": "16:45"
+                },
+                {
+                    "day": "Friday",
+                    "start": "14:00",
+                    "end": "15:15"
+                }
+            ]
+        },
+        "L": {
+            "L_1": [
+                {
+                    "day": "Thursday",
+                    "start": "14:00",
+                    "end": "15:15"
+                },
+                {
+                    "day": "Friday",
+                    "start": "15:30",
+                    "end": "16:45"
+                }
+            ]
+        },
+        "M": {
+            "M_1": [
+                {
+                    "day": "Monday",
+                    "start": "15:30",
+                    "end": "16:45"
+                },
+                {
+                    "day": "Tuesday",
+                    "start": "14:00",
+                    "end": "15:15"
+                }
+            ]
+        },
+        "P": {
+            "P_1": [
+                {
+                    "day": "Monday",
+                    "start": "14:00",
+                    "end": "16:45"
+                }
+            ]
+        },
+        "Q": {
+            "Q_1": [
+                {
+                    "day": "Tuesday",
+                    "start": "14:00",
+                    "end": "16:45"
+                }
+            ]
+        },
+        "R": {
+            "R_1": [
+                {
+                    "day": "Wednesday",
+                    "start": "14:00",
+                    "end": "16:45"
+                }
+            ]
+        },
+        "S": {
+            "S_1": [
+                {
+                    "day": "Thursday",
+                    "start": "14:00",
+                    "end": "16:45"
+                }
+            ]
+        },
+        "T": {
+            "T_1": [
+                {
+                    "day": "Friday",
+                    "start": "14:00",
+                    "end": "16:45"
+                }
+            ]
+        }
     },
-    "B": {
-     "B_1": [
-        { "day": "Monday", "start": "09:00", "end": "09:50" },
-        { "day": "Tuesday", "start": "08:00", "end": "08:50" },
-        { "day": "Wednesday", "start": "13:00", "end": "13:50" },
-        { "day": "Friday", "start": "11:00", "end": "11:50" }
-      ],
-      "B_2": [
-      { "day": "Monday", "start": "09:00", "end": "09:50" },
-        { "day": "Tuesday", "start": "08:00", "end": "08:50" },
-        { "day": "Wednesday", "start": "12:00", "end": "12:50" },
-        { "day": "Friday", "start": "11:00", "end": "11:50" }
-      ]
-    },
-     "C": {
-     "C_1": [
-        { "day": "Monday", "start": "10:00", "end": "10:50" },
-        { "day": "Tuesday", "start": "09:00", "end": "09:50" },
-        { "day": "Wednesday", "start": "08:00", "end": "08:50" },
-        { "day": "Friday", "start": "13:00", "end": "13:50" }
-      ],
-      "C_2": [
-        { "day": "Monday", "start": "10:00", "end": "10:50" },
-        { "day": "Tuesday", "start": "09:00", "end": "09:50" },
-        { "day": "Wednesday", "start": "08:00", "end": "08:50" },
-        { "day": "Friday", "start": "12:00", "end": "12:50" }
-      ]
-    },
-    "D": {
-     "D_1": [
-        { "day": "Monday", "start": "11:00", "end": "11:50" },
-        { "day": "Tuesday", "start": "10:00", "end": "10:50" },
-        { "day": "Wednesday", "start": "09:00", "end": "09:50" },
-        { "day": "Thursday", "start": "13:00", "end": "13:50" }
-      ],
-      "D_2": [
-        { "day": "Monday", "start": "11:00", "end": "11:50" },
-        { "day": "Tuesday", "start": "10:00", "end": "10:50" },
-        { "day": "Wednesday", "start": "09:00", "end": "09:50" },
-        { "day": "Thursday", "start": "12:00", "end": "12:50" }
-      ]
-    },
-    "E": {
-     "E_1": [
-        { "day": "Tuesday", "start": "11:00", "end": "11:50" },
-        { "day": "Wednesday", "start": "10:00", "end": "10:50" },
-        { "day": "Thursday", "start": "08:00", "end": "08:50" },
-        { "day": "Friday", "start": "17:00", "end": "17:50" }
-      ]
-    
-    },
-    "F": {
-     "F_1": [
-        { "day": "Tuesday", "start": "17:00", "end": "17:50" },
-        { "day": "Wednesday", "start": "11:00", "end": "11:50" },
-        { "day": "Thursday", "start": "09:00", "end": "09:50" },
-        { "day": "Friday", "start": "08:00", "end": "08:50" }
-      ]
-      
-    },
-    "G": {
-     "G_1": [
-        { "day": "Monday", "start": "13:00", "end": "13:50" },
-        { "day": "Wednesday", "start": "17:00", "end": "17:50" },
-        { "day": "Thursday", "start": "10:00", "end": "10:50" },
-        { "day": "Friday", "start": "9:00", "end": "09:50" }
-      ],
-      "G_2": [
-        { "day": "Monday", "start": "12:00", "end": "12:50" },
-        { "day": "Wednesday", "start": "17:00", "end": "17:50" },
-        { "day": "Thursday", "start": "10:00", "end": "10:50" },
-        { "day": "Friday", "start": "9:00", "end": "09:50" }
-      ]
-    },
-    "H": {
-     "H_1": [
-        { "day": "Monday", "start": "14:00", "end": "15:15" },
-        { "day": "Tuesday", "start": "15:30", "end": "16:45" },
-        { "day": "Thursday", "start": "17:00", "end": "17:50" }
-      ]
-    },
-    "J": {
-     "J_1": [
-        { "day": "Monday", "start": "17:00", "end": "17:50" },
-        { "day": "Wednesday", "start": "14:00", "end": "15:15" },
-        { "day": "Thursday", "start": "15:30", "end": "16:45" }
-      ]
-    },
-    "K": {
-     "K_1": [
-        { "day": "Wednesday", "start": "15:30", "end": "16:45" },
-        { "day": "Friday", "start": "14:00", "end": "15:15" }
-      ]
-    },
-     "L": {
-     "L_1": [
-        { "day": "Thursday", "start": "14:00", "end": "15:15" },
-        { "day": "Friday", "start": "15:30", "end": "16:45" }
-      ]
-    },
-    "M": {
-     "M_1": [
-        { "day": "Monday", "start": "15:30", "end": "16:45" },
-        { "day": "Tuesday", "start": "14:00", "end": "15:15" }
-      ]
-    },
-    "P": {
-     "P_1": [
-        { "day": "Monday", "start": "14:00", "end": "16:45" }
-      ]
-    },
-    "Q": {
-     "Q_1": [
-        { "day": "Tuesday", "start": "14:00", "end": "16:45" }
-      ]
-    },
-    "R": {
-     "R_1": [
-        { "day": "Wednesday", "start": "14:00", "end": "16:45" }
-      ]
-    },
-    "S": {
-     "S_1": [
-        { "day": "Thursday", "start": "14:00", "end": "16:45" }
-      ]
-    },
-    "T": {
-     "T_1": [
-        { "day": "Friday", "start": "14:00", "end": "16:45" }
-      ]
-    }
-  },
-  "my_courses": [
-    {
-      
-    }
-  ]
+    "my_courses": [
+        {
+            "slot": "E",
+            "sub_slot": "E_1",
+            "course_code": "EE3002",
+            "course_name": "Analog Circuits"
+        },
+        {
+            "slot": "D",
+            "sub_slot": "D_1",
+            "course_code": "EE3004",
+            "course_name": "Control Engineering"
+        },
+        {
+            "slot": "F",
+            "sub_slot": "F_1",
+            "course_code": "EE3006 ",
+            "course_name": "Principle Of Measurement"
+        },
+        {
+            "slot": "A",
+            "sub_slot": "A_1",
+            "course_code": "CY4050",
+            "course_name": "Electrochemical Processes"
+        },
+        {
+            "slot": "B",
+            "sub_slot": "B_1",
+            "course_code": "EE5312",
+            "course_name": "VLSI Technology"
+        }
+    ]
 }
